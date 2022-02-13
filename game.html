@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Flappy Anuja</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/Anuj.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Anuj.data",
+        frameworkUrl: "Build/Anuj.framework.js",
+        codeUrl: "Build/Anuj.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Pirateclaw",
+        productName: "Flappy Bird",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
