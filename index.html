@@ -19,6 +19,11 @@
 <br>
 <br>
 <button id="arview3" onclick="meme()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch Memes</button>
+<br>
+<br>
+<br>
+<br>
+<button id="arview4" onclick="gallery()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</button>
 </div>
 
 
@@ -130,23 +135,59 @@
   background-repeat: no-repeat;
   background-size: 130px 130px;
 }
+
+#arview3{
+  height: 120px;
+  width: 500px;
+	color: #fff;
+	text-decoration: none;
+	background: #00BFFF;
+	padding: 15px;
+	border-radius: 1px;
+	display: inline-block;
+	border: solid;
+  border-color: black;
+  transition: all 0.4s ease 0s;
+  background-image: url(https://i.ibb.co/m84rXsD/gallery-icon.png);
+  background-repeat: no-repeat;
+  background-size: 115px 115px;
+  font-size: 250%;
+}
+
+#arview3:hover{
+	background: #434343;
+	letter-spacing: 1px;
+  font-size: 270%;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+  background-image: url(https://i.ibb.co/m84rXsD/gallery-icon.png);
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+}
 	
 </style>
 
 <script>
 function game()
 {
- location.replace("./game.html")
+ window.location.href = 'game.html';
 }
 
 function nft()
 {
- location.replace("./nft.html")
+ window.location.href = 'nft.html';
 }
 	
 function meme()
 {
- location.replace("./meme.html")
+ window.location.href = 'meme.html';
+}
+	
+function gallery()
+{
+ window.location.href = 'gallery.html';
 }
 </script>
 </html>
